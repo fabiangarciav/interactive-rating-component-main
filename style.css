@@ -107,6 +107,7 @@ ul li a:active {
     font-size: 1.5rem;
     letter-spacing: .2rem;
     color: var(--White);
+    cursor: pointer;
 }
 .submit-button:hover {
     background-color: var(--White);
