@@ -3,13 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Interactive rating component</title>
-
   <link rel="stylesheet" href="./style.css">
-  <script src="./script.js"></script>
 </head>
 <body>
   <main class="container">
@@ -21,20 +17,20 @@
         Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
       </p>
       <ul>
-        <li><a id="rate1" href="">1</a></li>
-        <li><a id="rate2" href="">2</a></li>
-        <li><a id="rate3" href="">3</a></li>
-        <li><a id="rate4" href="">4</a></li>
-        <li><a id="rate5" href="">5</a></li>
+        <li><a href = "#" id = "rateIcon1" onclick="rateIconSelectedColor(1)">1</a></li>
+        <li><a href = "#" id = "rateIcon2" onclick="rateIconSelectedColor(2)">2</a></li> 
+        <li><a href = "#" id = "rateIcon3" onclick="rateIconSelectedColor(3)">3</a></li> 
+        <li><a href = "#" id = "rateIcon4" onclick="rateIconSelectedColor(4)">4</a></li> 
+        <li><a href = "#" id = "rateIcon5" onclick="rateIconSelectedColor(5)">5</a></li> 
       </ul>
-      <button class="submit-button" >SUBMIT</button>
+      <button class="submit-button" onclick="showThankYouBox()">SUBMIT</button>
     </div>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="thank-you-box">
+    <div class="thank-you-box" style="display:none">
       <img id="checkout-icon" src="/images/illustration-thank-you.svg" alt="Thank you for rating our service!">
-      <button class="rate-button">You selected <span></span> out of 5</button>
+      <button type="button" class="rate-button">You selected <span id="numberRateSelected"></span> out of 5</button>
       <h1>Thank you!</h1>
       <p>We appreciate you taking the time to give a rating. If you ever need more support, 
       don’t hesitate to get in touch!</p>
@@ -45,5 +41,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Fabian Garcia</a>.
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
