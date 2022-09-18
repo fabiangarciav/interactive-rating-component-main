@@ -14,7 +14,9 @@ function rateIconSelectedColor(rateNumber) {
 }
 
 function showThankYouBox() {
-    spanRateNumber.innerText = rateNumberSelect;
-    rateBoxPopup.setAttribute('style','display:none');
-    thankYouBoxPopup.setAttribute('style','display:block');
+    if (rateNumberSelect != 0) {
+        spanRateNumber.innerText = rateNumberSelect;
+        rateBoxPopup.setAttribute('style','display:none');
+        thankYouBoxPopup.setAttribute('style','display:block');
+    }
 }
